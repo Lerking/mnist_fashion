@@ -44,13 +44,15 @@ print("Training network ...")
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 print("Making predictions...")
-t1 = time.time()
+t3 = time.time()
 for i in range(9):
 	img = np.array(X_test[i][np.newaxis,:])
 	preds = model.predict_classes(img)
 	print("Image[", i, "] - Me thinks me saw a : ", predictions[int(preds[0])] )
-t2 = time.time()
-print("Predictions took %.2f sec." % (t2 - t1))
+t4 = time.time()
+print("Predictions took %.2f sec." % (t4 - t3))
+
+print('Total running time %.2f sec' % (t4 - t1))
 
 
 
