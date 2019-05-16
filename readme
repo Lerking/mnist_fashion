@@ -1,0 +1,7 @@
+mnist_fashion is a small test project for a neural network that utilizes the Keras module.
+
+Model data is loaded from the Keras project - 60000 28x28 pixel grey scale images, which has already been converted to training/test data.
+
+It's important to know that the model is specific for 28x28 pixel images.
+Any other size of image requires a new model, for this specific image size.
+
