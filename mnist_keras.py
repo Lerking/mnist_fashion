@@ -1,11 +1,11 @@
 
 import numpy as np
 import time
-import matplotlib.pyplot as plt
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers.core import Dense, Flatten, Dropout, Activation
 from keras.utils import np_utils
+import matplotlib.pyplot as plt
 
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 num_pixels = X_train.shape[1] * X_train.shape[2]

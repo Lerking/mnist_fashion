@@ -1,11 +1,11 @@
 
 import numpy as np
 import time
-import matplotlib.pyplot as plt
 from keras.datasets import mnist
 from keras.models import Sequential
 from keras.layers.core import Dense, Flatten, Dropout, Activation
 from keras.utils import np_utils
+import matplotlib.pyplot as plt
 
 predictions = ['T-shirt/top', 'trouser', 'Pullover', 'Dress', 'Coat',
               'Sandal', 'Shirt', 'Sneaker', 'Bag', 'Ankle boot']
